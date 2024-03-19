@@ -16,7 +16,7 @@ export async function onRequestPost({ request }) {
 				output[key] = [].concat(tmp, value);
 			}
 		}
-// okay
+
 		let pretty = JSON.stringify(output, null, 2);
 		return new Response(pretty, {
 			headers: {
